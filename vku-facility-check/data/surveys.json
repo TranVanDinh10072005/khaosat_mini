@@ -1,0 +1,31 @@
+[
+  {
+    "id": "vku_1789374801591_09swpyoat",
+    "facility": "Cơ sở 1 – Đà Nẵng",
+    "building": "Tòa A",
+    "floor": "Tầng 4",
+    "room": "123",
+    "inspector": "Hshs (23it233)",
+    "date": "2026-09-14",
+    "time": "15:32",
+    "facilities": {
+      "lighting": "good",
+      "airConditioner": "good",
+      "projector": "good",
+      "computer": "check",
+      "tables": "check",
+      "electricity": "good",
+      "wifi": "good",
+      "fan": "good",
+      "door": "good",
+      "safety": "good"
+    },
+    "note": "Ko ổn",
+    "images": [],
+    "hasIssues": true,
+    "status": "pending",
+    "synced": true,
+    "createdAt": "2026-09-14T08:33:21.591Z",
+    "updatedAt": "2026-09-14T08:33:21.591Z"
+  }
+]

@@ -1,0 +1,227 @@
+/* ============================================================
+   VKU Facility Check – responsive.css
+   Mobile-First Breakpoints
+   ============================================================ */
+
+/* ── Base: Mobile (<480px) ── */
+/* All styles in style.css are mobile-first */
+
+/* Small devices (480px+) */
+@media (min-width: 480px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .facility-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .image-preview-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Tablets (768px+) */
+@media (min-width: 768px) {
+  :root {
+    --bottom-nav-height: 0px;
+  }
+
+  body {
+    font-size: 1rem;
+  }
+
+  /* Hide bottom nav on tablet+, show sidebar */
+  #bottom-nav {
+    display: none;
+  }
+
+  /* Sidebar Navigation */
+  #sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: var(--nav-height);
+    bottom: 0;
+    width: 220px;
+    background: var(--color-surface);
+    border-right: 1px solid var(--color-border-light);
+    padding: var(--space-4) var(--space-3);
+    z-index: 90;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.04);
+  }
+
+  .sidebar-nav-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-3) var(--space-4);
+    border-radius: var(--radius-lg);
+    cursor: pointer;
+    transition: var(--transition-fast);
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+  }
+
+  .sidebar-nav-item:hover {
+    background: var(--color-surface-2);
+    color: var(--color-primary);
+  }
+
+  .sidebar-nav-item.active {
+    background: #EFF6FF;
+    color: var(--color-primary);
+    font-weight: 600;
+  }
+
+  .sidebar-nav-item svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+
+  .sidebar-divider {
+    height: 1px;
+    background: var(--color-border-light);
+    margin: var(--space-3) 0;
+  }
+
+  #main-content {
+    margin-left: 220px;
+    padding-bottom: var(--space-8);
+  }
+
+  #offline-banner, #sync-banner {
+    left: 220px;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .facility-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .quick-actions {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .form-row {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .view {
+    padding: var(--space-6);
+  }
+
+  .fab {
+    right: var(--space-6);
+    bottom: var(--space-6);
+  }
+}
+
+/* Laptops/Desktops (1024px+) */
+@media (min-width: 1024px) {
+  #sidebar-nav {
+    width: 240px;
+  }
+
+  #main-content {
+    margin-left: 240px;
+    max-width: calc(100% - 240px);
+  }
+
+  #offline-banner, #sync-banner {
+    left: 240px;
+  }
+
+  .view {
+    padding: var(--space-8);
+    max-width: 960px;
+  }
+
+  .facility-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .survey-list {
+    gap: var(--space-4);
+  }
+
+  .detail-info-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Large Desktops (1200px+) */
+@media (min-width: 1200px) {
+  #sidebar-nav {
+    width: 260px;
+  }
+
+  #main-content {
+    margin-left: 260px;
+  }
+
+  #offline-banner, #sync-banner {
+    left: 260px;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ── Print ── */
+@media print {
+  #top-nav,
+  #bottom-nav,
+  #sidebar-nav,
+  #offline-banner,
+  #sync-banner,
+  .fab,
+  #toast-container {
+    display: none !important;
+  }
+
+  #main-content {
+    margin: 0;
+    padding: 0;
+  }
+
+  .view.active {
+    display: block;
+  }
+}
+
+/* ── Reduced Motion ── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ── Dark Mode (future ready) ── */
+@media (prefers-color-scheme: dark) {
+  /* Uncomment to enable dark mode:
+  :root {
+    --color-bg: #0D1B2A;
+    --color-surface: #162032;
+    --color-surface-2: #1E2D40;
+    --color-border: #2D3F55;
+    --color-border-light: #243347;
+    --color-text-primary: #F0F4F8;
+    --color-text-secondary: #A0AEC0;
+    --color-text-muted: #718096;
+  }
+  */
+}

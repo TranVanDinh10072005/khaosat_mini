@@ -1,0 +1,3 @@
+cloudflared.exe
+*.zip
+__pycache__/

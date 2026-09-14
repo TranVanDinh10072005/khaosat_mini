@@ -1,0 +1,26 @@
+[
+  {
+    "action": "visitor_access",
+    "timestamp": "15:32:44 14/9/2026",
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/22H352 [FBAN/FBIOS;FBAV/578.1.0.27.108;FBBV/1063006513;FBDV/iPhone15,3;FBMD/iPhone;FBSN/iOS;FBSV/18.7.8;FBSS/3;FBCR/;FBID/phone;FBLC/vi_VN;FBOP/80]",
+    "screen": "430x932",
+    "language": "vi-VN",
+    "referrer": "Trực tiếp"
+  },
+  {
+    "action": "visitor_access",
+    "timestamp": "01:31:44 14/9/2026",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36",
+    "screen": "2000x2000",
+    "language": "en-US",
+    "referrer": "https://www.facebook.com/"
+  },
+  {
+    "action": "visitor_access",
+    "timestamp": "15:29:45 14/9/2026",
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/23G83 [FBAN/FBIOS;FBAV/578.1.0.27.108;FBBV/1063006513;FBDV/iPhone13,2;FBMD/iPhone;FBSN/iOS;FBSV/26.6.1;FBSS/3;FBCR/;FBID/phone;FBLC/vi_VN;FBOP/80]",
+    "screen": "390x844",
+    "language": "vi-VN",
+    "referrer": "Trực tiếp"
+  }
+]

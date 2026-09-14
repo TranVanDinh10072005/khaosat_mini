@@ -1,0 +1,43 @@
+{
+  "name": "VKU Facility Check",
+  "short_name": "VKU Check",
+  "description": "Ứng dụng PWA khảo sát và kiểm tra cơ sở vật chất trong khuôn viên VKU - Trường Đại học Công nghệ Thông tin và Truyền thông Việt – Hàn",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#1565C0",
+  "theme_color": "#1565C0",
+  "lang": "vi",
+  "scope": "./",
+  "categories": ["utilities", "education"],
+  "icons": [
+    {
+      "src": "assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Tạo khảo sát mới",
+      "short_name": "Khảo sát",
+      "description": "Mở form tạo phiếu khảo sát mới",
+      "url": "./index.html#survey",
+      "icons": [{ "src": "assets/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Lịch sử khảo sát",
+      "short_name": "Lịch sử",
+      "description": "Xem danh sách phiếu khảo sát",
+      "url": "./index.html#history",
+      "icons": [{ "src": "assets/icons/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}
